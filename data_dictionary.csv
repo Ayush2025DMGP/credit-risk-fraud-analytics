@@ -1,0 +1,15 @@
+file,column,meaning,notes
+application_data.csv,applicant_id,Synthetic applicant key,Identifier only; not a model feature.
+application_data.csv,target_default,1 = payment difficulty; 0 = no payment difficulty,Simulated outcome label.
+application_data.csv,credit_score,Simulated credit score between 300 and 850,Higher generally represents stronger credit history in this synthetic data.
+application_data.csv,monthly_income,Approximate monthly income in INR,Synthetic amount; some values are missing by design.
+application_data.csv,existing_monthly_debt,Existing monthly debt payments in INR,Used when estimating total monthly debt burden.
+application_data.csv,loan_amount,Requested loan principal in INR,Contains some high-value observations for outlier practice.
+application_data.csv,previous_delinquency_count,Number of past applications with 30+ days past due,Derived from previous_application.csv.
+previous_application.csv,previous_status,"Approved, Cancelled, Refused, or Unused offer",Historical application decision.
+previous_application.csv,days_past_due,Days a previous payment was overdue,Synthetic historical repayment signal.
+repayment_history.csv,payment_status,"On time, Late, or Missed category",Post-loan monitoring data; not used as a pre-loan model feature.
+transactions.csv,target_fraud,1 = suspicious/fraud-labelled transaction; 0 = other,Synthetic fraud label for practice only.
+transactions.csv,new_device,1 = device differs from the usual device; 0 = not flagged,One simulated fraud-monitoring signal.
+transactions.csv,is_international,1 = international transaction; 0 = domestic,One simulated transaction attribute.
+transactions.csv,transaction_hour,Hour of transaction from 0 to 23,Used to compare transaction patterns.
