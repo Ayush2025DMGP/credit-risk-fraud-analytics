@@ -170,7 +170,7 @@ The proposed analytics solution follows an enterprise-grade 7-stage analytical p
 | **Business-Driven** | **Net Disposable Income** | $\text{Income} - \text{Existing Debt} - \text{EMI}$ | Quantifies remaining monthly liquidity buffer against financial shocks. |
 | **Type-Driven** | **Credit Score Bands** | Below 580, 580–649, 650–719, 720+ | Transforms continuous bureau scores into regulatory underwriting risk tiers. |
 | **Type-Driven** | **DTI Leverage Bands** | Below 25%, 25–40%, 40–55%, Above 55% | Categorizes applicants into safe, manageable, elevated, and distressed debt tiers. |
-| **Data-Driven** | **Prior Delinquency Flag** | $\mathbb{I}(\text{previous\_delinquency\_count} > 0)$ | Isolates repeat defaulters from first-time applicants. |
+| **Data-Driven** | **Prior Delinquency Flag** | $\mathbb{I}(\text{Prior Delinquency Count} > 0)$ | Isolates repeat defaulters from first-time applicants (`previous_delinquency_count` > 0). |
 
 ### 5.3 Top 5 Default Driver Variables
 
